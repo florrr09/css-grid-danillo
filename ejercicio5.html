@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 5 de grid</title>
+</head>
+<style>
+ .tabla{ 
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns:  repeat(4, 1fr);
+  grid-template-rows: repeat(4 ,54px);
+  justify-content: center;
+  margin: 0 auto;
+  width: 500px;
+ }
+ article{
+ background-color: beige;
+ text-align: center;
+
+ }
+ .cabe{
+  grid-column: 1/ span 5;
+  grid-row: 1;
+ }
+ .o{
+  grid-row: 1/ span 2;
+  grid-column:  4;
+  ;
+
+ }
+</style>
+<body>
+ <section class="tabla">
+  <article class="cabe">Celda 1</article>
+  <article class="o">Celda 2</article>
+  <article>Celda 3</article>
+  <article>Celda 4</article>
+  <article>Celda 5</article>
+ </section>  
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 4 de grid</title>
+</head>
+<style>
+ .tabla{ 
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: 100px repeat(4, 1fr);
+  grid-template-rows: repeat(3 ,54px);
+  grid-template-areas: 
+      "cabe cabe cabe cabe cabe"
+      "o col1 col1 col2 col2"
+      "o col3 col3 col4 col4 ";
+ justify-content: stretch;
+ margin: 0 auto;
+ width: 400px;
+ }
+ article{
+ background-color: beige;
+ text-align: center;
+
+ }
+ .cabe{
+  grid-area: cabe;
+ }
+ .o{
+ grid-area: o;
+ }
+ .l1{
+  grid-area: col1;
+ }
+ .l2{ 
+  grid-area: col2;
+ }
+ .l3{
+  grid-area: col3;
+ }
+ .l4{
+  grid-area: col4;
+ }
+
+</style>
+<body>
+ <section class="tabla">
+  <article class="cabe">Celda 1</article>
+  <article class="o">Celda 2</article>
+  <article class="l1">Celda 3</article>
+  <article class="l2">Celda 4</article>
+  <article class="l3">Celda 5</article>
+  <article class="l4">Celda 6</article>
+ </section>  
+</body>
+</html>

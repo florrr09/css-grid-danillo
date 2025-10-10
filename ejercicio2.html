@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 2 de grid</title>
+</head>
+<style>
+ .tabla{ 
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 54px);
+ justify-content: center;
+ }
+ article{
+ background-color: beige;
+ text-align: center;
+
+ }
+ .cabe{
+  grid-column: 1/4;
+ }
+ body{
+
+ }
+</style>
+<body>
+ <section class="tabla">
+  <article class="cabe">Celda 1</article>
+  <article>Celda 2</article>
+  <article>Celda 3</article>
+  <article>Celda 4</article>
+  <article>Celda 5</article>
+  <article>Celda 6</article>
+  <article>Celda 7</article>
+ </section>  
+</body>
+</html>

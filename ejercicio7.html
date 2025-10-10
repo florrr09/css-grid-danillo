@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 6 de grid</title>
+</head>
+<style>
+ .tabla{ 
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 100px repeat(2, 150px);
+  grid-template-rows: repeat(3 ,54px);
+ justify-content: center;
+ }
+ article{
+ background-color: beige;
+ text-align: center;
+ }
+ .tabla{ 
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4 ,54px);
+  grid-template-areas: 
+  "  .  cel1 cel2 "
+  "cel2 cel3 cel3"
+  "cel4 cel4 cel4";
+ justify-content: center;
+ margin: 0;
+ width: 400px;
+ }
+ .cel1{
+  grid-area: cel1;
+ }
+ .cel2{
+  grid-area: cel2;
+ }
+ .cel3{
+  grid-area: cel3;
+ }
+ .cel4{
+  grid-area: cel4;
+ }
+</style>
+<body>
+ <section class="tabla">
+  <article class="cel1">Celda 1</article>
+  <article class="cel2">Celda 2</article>
+  <article class="cel3">Celda 3</article> 
+  <article class="cel4">Celda 4</article>
+
+ </section>  
+</body>
+</html>
