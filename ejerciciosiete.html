@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ejercicio 7 </title>
+<style>
+  div{
+    padding: 18px;
+  }
+
+  .tabla{
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-areas: 
+      '   .   c1 c1'
+      'c2 c3 c3 '
+      'c4 c4 c4 ';
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+  } 
+   .c1{ grid-area: c1;
+text-align: center;
+background-color: beige;}
+   .c2{ grid-area: c2;
+    text-align: center;
+    background-color: beige;}
+   .c3{ grid-area: c3;
+    text-align: center;
+    background-color: beige;}
+   .c4{ grid-area: c4;
+    text-align: center;
+    background-color: beige;}
+
+</style>
+</head>
+<body>
+  
+<div class="tabla">
+<artitle class="c1"> Celda 1</artitle>
+<artitle class="c2"> Celda 2</artitle>
+<artitle class="c3"> Celda 3: Contenido de la celda 3 </artitle>
+<artitle class="c4"> Celda 4</artitle>
+</div>
+</body>
